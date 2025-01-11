@@ -211,7 +211,7 @@ const Company = () => {
         <Button
           type="primary"
           icon={<PlusOutlined />}
-          onClick={() => navigate("/dashboard/addcompany")}
+          onClick={() => navigate("/addcompany")}
         >
           Add Company
         </Button>

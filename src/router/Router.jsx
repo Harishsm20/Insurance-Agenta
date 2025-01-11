@@ -6,8 +6,9 @@ import {
   } from "react-router-dom";
   import DashLayout from '../layouts/DashLayout';
 
-  import {ADashboard, AAddDestination,ADestinations, ACategory, APackages, AAddPackage, AAddCategory, ARequestList} from '../pages';
+  import {ADashboard, ACategory, APackages, AAddPackage, AAddCategory, ARequestList} from '../pages';
 import Company from '../pages/Company';
+import AddCompany from '../pages/AddCompany';
 
 
   const router = createBrowserRouter(
@@ -16,7 +17,7 @@ import Company from '../pages/Company';
         <Route path="/" element={<DashLayout />}>
           <Route index element={<ADashboard />} />
           <Route path="company" element={<Company />} />
-          <Route path="addCompany" element={<AAddDestination />} />
+          <Route path="addCompany" element={<AddCompany />} />
           <Route path="records" element={<ACategory />} />
           <Route path="addRecords" element={<AAddCategory />} />
         </Route>
